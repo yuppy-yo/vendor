@@ -1,0 +1,177 @@
+{% load static %}
+body{
+    font-family: "piazzolla",  sans-serif;
+    background-color: #FFF7EE;
+}
+
+li{
+    list-style:none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.headerMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 30px;
+    background-color: #FFF7EE;
+
+    margin-top: 50px;
+    box-shadow: 0px 0px 39px 0px rgba(0, 0, 0, 0.36);
+}
+
+.logo h1{
+    font-size: 40px ;
+    font-weight: 900;
+    color: #EA932F;
+
+    margin-left: 80px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+
+.logo a{
+    font-size: 40px;
+    font-weight: 900;
+    color: #EA932F;
+}
+
+
+.navigation ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.navigation ul li a{
+    margin-right: 50px;
+    color: #EA932F;
+    font-weight: 900;
+}
+
+.navigation a:hover{
+    border-bottom: 2px solid #EA932F;
+    font-size: 24px;
+}
+
+.icons a{
+    margin-right: 40px;
+}
+.icons{
+    margin-right: 40px;
+}
+
+
+.regForm{
+    width: 761px;
+    height: 571px;
+    margin:auto;
+    margin-top: 150px;
+
+    background-color: #FFF7EE;
+    box-shadow: 0px 0px 39px 0px rgba(0, 0, 0, 0.36);
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.regFormForm, .regSurnameArea, .regNameArea, .regPhoneArea, .regLoginArea, .regPasswordArea, .regApPasswordArea{
+    display: flex;
+    flex-direction: column;
+}
+
+.regHeader h1{
+    font-weight: 400;
+    font-size: 40px;
+
+    margin-top: 41px;
+    margin-bottom: 30px;
+}
+
+label{
+    font-size: 20px;
+    opacity: 40%;
+}
+
+.regBody{
+    width: 79%;
+}
+
+.regSurnameArea{
+    margin-bottom: 25px;
+}
+
+.regNameArea{
+    margin-bottom:25px ;
+}
+
+.regLoginArea{
+    margin-bottom: 25px;
+}
+
+.regPasswordArea{
+    margin-bottom: 25px;
+}
+
+.areas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.regFormForm input{
+   line-height: 2.5;
+   border-radius: 10px;
+   background-color: #E5C8A5;
+   border: none;
+   outline: none;
+   padding-left: 20px;
+   padding-right: 20px;
+
+   width: 250px;
+}
+
+.regFormForm button{
+    margin-top: 39px;
+    line-height: 2.4;
+
+    border-radius: 25px;
+    background-color: #E5A760;
+    border: none;
+
+    color:white;
+    font-family: "piazzolla",  sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.regFormForm button:hover{
+    cursor: pointer;
+}
+
+.regFooter{
+    font-size: 14px;
+}
+
+.regFooter p{
+    opacity: 45%;
+}
+.regFooter a{
+    opacity: 100%;
+    color: #DFA048;
+    font-size: 14px;
+}
+
+.regFooter a:hover{
+    border-bottom: 1px solid #DFA048;
+}

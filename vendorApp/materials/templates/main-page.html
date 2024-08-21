@@ -1,0 +1,50 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main-page-styles.css'%}" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&display=swap" rel="stylesheet">
+    <title>Главная</title>
+</head>
+<body>
+    <div class="container">
+        <div class="headerMenu">
+            <div class="logo">
+                <h1>Вендор</h1>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Аренда</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="icons">
+                <a href="#"><img src="{%static 'img/cart.png'%}" alt="корзина"></a>
+                <a href="{% url 'login' %}"><img src="{%static 'img/profile.png'%}" alt="профиль"></a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="news">
+            <div class="parent">
+                <div class="div1"> </div>
+                <div class="div2"> </div>
+                <div class="div3"> </div>
+                <div class="div4"> </div>
+                <div class="div5"> </div>
+                <div class="div6"> </div>
+                <div class="div7"> </div>
+                <div class="div8"> </div>
+                <div class="div9"> </div>
+                <div class="div10"> </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

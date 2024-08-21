@@ -1,0 +1,85 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/registration-page-styles.css'%}" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&display=swap" rel="stylesheet">
+    <title>Регистрация</title>
+</head>
+<body>
+    <div class="container">
+        <div class="headerMenu">
+            <div class="logo">
+                <h1><a href="{% url 'main-page' %}">Вендор</a></h1>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Аренда</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="icons">
+                <a href="#"><img src="{%static 'img/cart.png'%}" alt="корзина"></a>
+                <a href="#"><img src="{%static 'img/profile.png'%}" alt="профиль"></a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="regForm">
+            <div class="regHeader">
+                <h1>Регистрация</h1>
+            </div>
+            <div class="regBody">
+                <form class="regFormForm" method="post">
+                    <div class="areas">
+                        <div class="leftAreas">
+                            <div class="regSurnameArea">
+                                <label for="surname">Фамилия</label>
+                                <input type="text" id="surname" name="userSurmane">
+                            </div>
+                            <div class="regNameArea">
+                                <label for="name">Имя</label>
+                                <input type="text" id="name" name="userName">
+                            </div>
+                            <div class="regPhoneArea">
+                                <label for="phone">Телефон</label>
+                                <input type="text" id="phone" name="userPhone">
+                            </div>
+                        </div>
+                        <div class="rightAreas">
+                            <div class="regLoginArea">
+                                <label for="regLogin">Логин</label>
+                                <input type="text" id="regLogin" name="userRegLogin">
+                            </div>
+                            <div class="regPasswordArea">
+                                <label for="regPassword">Пароль</label>
+                                <input type="password" id="regPassword" name="userRegPassword">
+                            </div>
+                            <div class="regApPasswordArea">
+                                <label for="apPassword">Подтверждение пароля</label>
+                                <input type="password" id="apPassword" name="userApPassword">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <button type="submit">Создать аккаунт</button>
+                </form>
+            </div>
+            <div class="regFooter">
+                <p>Уже есть аккаунт? <a href="{% url 'login' %}">Войти</a></p>
+            </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
